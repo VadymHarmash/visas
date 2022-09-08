@@ -1,0 +1,48 @@
+.prop-block{
+    padding: 30px 0;
+    &__wrapper{
+        h2{
+            @include h2(#3D3D3D);
+            margin: 50px 0;
+        }
+    }
+    &__header{
+        padding: 70px 0;
+        background-color: #140250;
+        text-align: center;
+        position: relative;
+        background-image: url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255,255,255,0.4);
+        background-blend-mode: color;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.5);
+            z-index: 2;
+        }
+        p{
+            font-size: 30px;
+            font-family: "Open Sans";
+            font-weight: 700;
+            color: #333333;
+            z-index: 3;
+        }
+    }
+    &__list{
+        width: 70%;
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                @extend %p;
+                padding: 10px 0;
+            }
+        }
+    }
+}

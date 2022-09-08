@@ -1,0 +1,7 @@
+@mixin h2($color) {
+    font-size: 36px;
+    line-height: 1.15;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: $color;
+}

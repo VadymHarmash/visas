@@ -1,0 +1,48 @@
+.header{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: color;
+    padding: 30px 0 0;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.5);
+            z-index: 2;
+        }
+    &__wrapper{
+        position: relative;
+        z-index: 3;
+        height: calc(100vh - 30px);
+    }
+    &__logo{
+        display: flex;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 0 0;
+    }
+    &__left{
+        width: 40%;
+        h1{
+            font-size: 42px;
+            line-height: 1.15;
+            font-family: "Open Sans";
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+    }
+    &__right{
+        width: 40%;
+        .contacts{
+            @extend %card;
+        }
+    }
+}

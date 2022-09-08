@@ -1,0 +1,41 @@
+.secondary-block{
+    padding: 30px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        width: 45%;
+        h2{
+            @include h2(#3D3D3D);
+            padding: 0 0 20px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                padding: 20px 0;
+                h3{
+                    font-size: 24px;
+                    font-family: "Open Sans";
+                    font-weight: 600;
+                    color: #171717;
+                    line-height: 1.15;
+                }
+                p{
+                    @extend %p;
+                }
+            }
+        }
+    }
+    &__image{
+        width: 40%;
+        border: 2px #140250 solid;
+        border-radius: 10px;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}

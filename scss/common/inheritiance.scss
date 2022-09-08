@@ -1,0 +1,38 @@
+%card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 400px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 50px 0;
+    h3{
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 24px;
+    }
+    a{
+        font-family: "Open Sans";
+        font-size: 18px;
+        text-decoration: none;
+        color: #005ab3;
+        border: 1px #005ab3 solid;
+        width: 75%;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 20px;
+        transition: .3s;
+        &:hover{
+            background-color: #005ab3;
+            color: #ffffff;
+        }
+    }
+}
+
+%p{
+    font-family: "Open Sans";
+    color: #000000;
+}
