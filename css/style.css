@@ -114,6 +114,7 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
   background-blend-mode: color;
   padding: 30px 0 0;
+  height: 100vh;
 }
 .header:after {
   content: "";
