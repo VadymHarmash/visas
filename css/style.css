@@ -114,7 +114,8 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
   background-blend-mode: color;
   padding: 30px 0 0;
-  height: 100vh;
+  height: 700px;
+  position: relative;
 }
 .header:after {
   content: "";
@@ -178,6 +179,7 @@ body {
   }
 
   .header {
+    height: 500px;
     padding: 20px 0 0;
   }
   .header__wrapper {
@@ -517,6 +519,9 @@ body {
   }
   .prop-block__list {
     width: 100%;
+  }
+  .prop-block__list ul {
+    list-style: none;
   }
   .prop-block__list ul li {
     font-size: 16px;
