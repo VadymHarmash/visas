@@ -1,1 +1,34 @@
-// SOON
+@media (max-width: 1250px ) {
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1024px) {
+    .container{
+        max-width: 767px;
+    }
+}
+@media (max-width: 767px ) {
+    .container{
+        max-width: 567px;
+    }
+    .footer{
+        padding: 20px 0;
+        text-align: center;
+        p{
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .footer{
+        p{
+            font-size: 14px;
+        }
+    }
+}
